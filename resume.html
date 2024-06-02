@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table,
+    tr,
+    td {
+      border: 3px solid black;
+      height: 100px;
+      
+    }
+    table{
+        text-align: center;
+        
+    }
+
+
+    h1{
+        color: red;
+    }
+
+    body{
+        padding: 100px;
+        background-color: rgb(42, 214, 214);
+    }
+  </style>
+  <body>
+    <script>
+      var a = document.createElement("h1");
+      var b = document.createTextNode("RESUME");
+      a.appendChild(b);
+      console.log(a);
+      a.style.textAlign = "center";
+
+      var c = document.body;
+      c.appendChild(a);
+
+      var d = document.createElement("hr");
+      document.body.appendChild(d);
+
+      //   user info
+
+      var ename = document.createElement("h3");
+      ename.innerText = "Name : HARISH KUMAR";
+      document.body.appendChild(ename);
+
+      var Email = document.createElement("h3");
+      Email.innerText = "Email : kasubaharish04@gmail.com";
+      document.body.appendChild(Email);
+
+      var pno = document.createElement("p");
+      pno.innerText = "PNo: 7670997704";
+      document.body.append(pno);
+
+      //career objective
+
+      var career = document.createElement("h1");
+      career.innerHTML = "<U>CAREER OBJECTIVE:-</U>";
+      document.body.append(career);
+
+      var carp = document.createElement("p");
+      carp.innerHTML =
+        "I would like to be a part of an Organization where I could use and enhance my<br>knowledge and talent for the development of both the Organization and myself.";
+      document.body.append(carp);
+
+      var edu = document.createElement("h1");
+      edu.innerHTML = "<U>EDUCATION QUALIFICATION:-</U>";
+      document.body.append(edu);
+
+      //table creating
+
+      //colunm - 1
+
+      var tab = document.createElement("table");
+
+      var row = document.createElement("tr");
+
+      tab.append(row);
+
+      var td1 = document.createElement("td");
+      td1.innerText = "S.NO";
+      row.append(td1);
+
+      var td2 = document.createElement("td");
+      td2.innerText = "QUALIFICATION";
+      row.append(td2);
+
+      var td3 = document.createElement("td");
+      td3.innerText = "INSTITUTION";
+      row.append(td3);
+
+      var td4 = document.createElement("td");
+      td4.innerText = "BOARD/UNIVERSITY";
+      row.append(td4);
+
+      var td5 = document.createElement("td");
+      td5.innerText = "YEAR";
+      row.append(td5);
+
+      var td6 = document.createElement("td");
+      td6.innerText = "PERCENTAGE";
+      row.append(td6);
+
+      //column 2
+
+      var row1 = document.createElement("tr");
+      tab.append(row1);
+
+      var td7 = document.createElement("td");
+      td7.innerText = "1.";
+      row1.append(td7);
+
+      var td8 = document.createElement("td");
+      td8.innerText = "B. tech (ECE)";
+      row1.append(td8);
+
+      var td9 = document.createElement("td");
+      td9.innerText = "Vijay insfitute ofTech&Scs.";
+      row1.append(td9);
+
+      var td10 = document.createElement("td");
+      td10.innerText = "JNTUH";
+      row1.append(td10);
+
+      var td11 = document.createElement("td");
+      td11.innerText = "2016";
+      row1.append(td11);
+
+      var td12 = document.createElement("td");
+      td12.innerText = "65%";
+      row1.append(td12);
+
+      //column 3
+
+      var row2 = document.createElement("tr");
+      tab.append(row2);
+
+      var td14 = document.createElement("td");
+      td14.innerText = "2.";
+      row2.append(td14);
+
+      var td15 = document.createElement("td");
+      td15.innerText = "Intermediate";
+      row2.append(td15);
+
+      var td16 = document.createElement("td");
+      td16.innerText = "Sri Vignan JuniorCollege.";
+      row2.append(td16);
+
+      var td17 = document.createElement("td");
+      td17.innerText = "Board ofintermediate educafion";
+      row2.append(td17);
+
+      var td18 = document.createElement("td");
+      td18.innerText = "2012.";
+      row2.append(td18);
+
+      var td19 = document.createElement("td");
+      td19.innerText = "65.2%";
+      row2.append(td19);
+
+      //column 4
+
+      var row3 = document.createElement("tr");
+      tab.append(row3);
+
+      var td20 = document.createElement("td");
+      td20.innerText = "3.";
+      row3.append(td20);
+
+      var td21 = document.createElement("td");
+      td21.innerText = "High school";
+      row3.append(td21);
+
+      var td22 = document.createElement("td");
+      td22.innerText = "Abhyudaya Patashala.";
+      row3.append(td22);
+
+      var td23 = document.createElement("td");
+      td23.innerText = "SSC";
+      row3.append(td23);
+
+      var td24 = document.createElement("td");
+      td24.innerText = "2010";
+      row3.append(td24);
+
+      var td25 = document.createElement("td");
+      td25.innerText = "68%";
+      row3.append(td25);
+      document.body.append(tab);
+
+      //technical sjill's
+
+      var tech = document.createElement("h1");
+      tech.innerHTML = "<u>TECHNICAL SKILLS:- </u>";
+      document.body.append(tech);
+
+      var skil = document.createElement("P");
+      skil.innerHTML = "<b>.HTML";
+      document.body.append(skil);
+
+      var skil1 = document.createElement("P");
+      skil1.innerHTML = "<b>.CSS";
+      document.body.append(skil1);
+
+      var skil2 = document.createElement("P");
+      skil2.innerHTML = "<b>.JAVA SCRIPT";
+      document.body.append(skil2);
+
+      //work exp
+
+      var work = document.createElement("h1");
+      work.innerHTML = "<u>WORK EXPERIENCE:-";
+      document.body.append(work);
+
+      var nvidia = document.createElement("h4");
+      nvidia.innerHTML = "<u>RANDSTAD TECHNOLOGIES:-";
+      document.body.append(nvidia);
+      var nvidia1 = document.createElement("h5");
+      nvidia1.innerText =
+        "Having 3 Year of Experience in NVIDIA GRAPHIC PVT LTD";
+      document.body.append(nvidia1);
+
+
+      // mini  project
+
+      var Mini = document.createElement("h1");
+      Mini.innerHTML="<U>MINI PROJECT:-";
+        document.body.append(Mini);
+
+        var tit = document.createElement("h3");
+      tit.innerHTML="<U>Title:-</u> ";
+        document.body.append(tit);
+
+        var titd = document.createElement("h7");
+      titd.innerHTML="ADVANCED SECURITY SYSTEM USING PIR SENSOR..";
+        document.body.append(titd);
+
+
+  // major project
+
+        var Mjr = document.createElement("h1");
+      Mjr.innerHTML="<U>MAJOR PROJECT:-";
+        document.body.append(Mjr);
+
+        var tit1 = document.createElement("h3");
+      tit1.innerHTML="<U>Title:-</u> ";
+        document.body.append(tit1);
+
+        var titd1 = document.createElement("h7");
+      titd1.innerHTML="AUTOMOBILE THEFT IDENTIFICATION USING GPS GSM..";
+        document.body.append(titd1);
+
+
+        // hobbies
+
+        var HOBIS = document.createElement("h1");
+      HOBIS.innerHTML="<U>HOBBIES:-";
+        document.body.append(HOBIS);
+
+        var H1 = document.createElement("h7");
+      H1.innerHTML="➢ Playing Cricket.<br>➢ Playing Chess.<br>➢ Reading Books.";
+        document.body.append(H1);
+
+
+        // PERSONAL DETAILS
+
+        var pdetails = document.createElement("p");
+        pdetails.innerHTML="<u><h1>PERSONAL DETAILS:-";
+            document.body.append(pdetails);
+
+
+ var Name = document.createElement("pre");
+        Name.innerHTML="<h3>NAME                           :               K.HARISH KUMAR.";
+            document.body.append(Name);
+
+            
+ var date = document.createElement("pre");
+        date.innerHTML="<h3>DATE OF BIRTH                  :               15/07/1995.";
+            document.body.append(date);
+
+
+            var fname = document.createElement("pre");
+        fname.innerHTML="<h3>Father’s Name                  :               K.SRINIVAS. ";
+            document.body.append(fname);
+
+            var Languages = document.createElement("pre");
+        Languages.innerHTML="<h3>Languages known                :               Telugu,English,Hindi.";
+            document.body.append(Languages);
+
+            var Paddress = document.createElement("pre");
+        Paddress.innerHTML="<h3>PERSONAL ADDRESS               :               H.NO: 10-2/1,<br>                                               Vill: Domakonda, <br>                                               Mdl: Domakonda,<br>                                               Dist: Kamareddy.";
+            document.body.append(Paddress);
+
+
+            var pincode = document.createElement("pre");
+        pincode.innerHTML="<h3>PIN CODE                       :               503123.";
+            document.body.append(pincode);
+
+
+            // DECLARATION
+
+            var Dec= document.createElement("h1");
+        Dec.innerHTML="<u>DECLARATION :-";
+            document.body.append(Dec);
+
+            var Dec= document.createElement("p");
+        Dec.innerHTML="I hereby declare that the above written particulars are true to the best of<br>my knowledge and belief.";
+            document.body.append(Dec);
+
+
+            var placenname= document.createElement("pre");
+        placenname.innerHTML="<h2>Place:Hyderabad                                                                               (K.HARISH KUMAR)</h4>";
+            document.body.append(placenname);
+    </script>
+  </body>
+</html>
